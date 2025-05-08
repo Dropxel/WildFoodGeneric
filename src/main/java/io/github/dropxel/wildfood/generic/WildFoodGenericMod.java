@@ -20,6 +20,7 @@ import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
+import net.minecraft.world.item.CreativeModeTabs;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(WildFoodGenericMod.MOD_ID)
@@ -63,8 +64,9 @@ public class WildFoodGenericMod {
         @SubscribeEvent
         public static void
         onCreativeModeTabContents(BuildCreativeModeTabContentsEvent event) {
-            // Do something when the creative mode tab is opened
-            LOGGER.info("\n\nHELLO FROM CREATIVE MODE TAB\n");
+            if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+                WildFoodGenericItems.ITEM_MAP.values().forEach(holder -> event.accept(holder.get()));
+            }
         }
     }
 
