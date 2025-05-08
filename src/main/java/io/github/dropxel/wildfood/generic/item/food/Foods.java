@@ -30,7 +30,6 @@ public enum Foods {
     COD_CROUTONS("cod_croutons", 6, 0.5F),
     COMPOTE("compote", 4, 0.3F),
     CONDENSED_MILK("condensed_milk", 5, 0.4F),
-    COOKIE_DOUGH("cookie_dough", 6, 0.5F),
     COOKIE_SANDWICH("cookie_sandwich", 7, 0.6F),
     COOKIE_TRUFFLE("cookie_truffle", 8, 0.7F),
     CRISPY_PUFFER("crispy_puffer", 5, 0.4F),
@@ -110,7 +109,6 @@ public enum Foods {
     TRIFLE("trifle", 8, 0.7F),
     VELOUTE("veloute", 6, 0.5F),
     ZOMBIE_JERKY("zombie_jerky", 7, 0.6F);
-
 
     private final String name;
     private final FoodProperties foodProperties;
