@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:red_mushroom"
+    }
+  },
+  "pattern": [
+    "## "
+  ],
+  "result": {
+    "count": 2,
+    "id": "wildfood_generic:spicy_mushroom_powder"
+  }
+}

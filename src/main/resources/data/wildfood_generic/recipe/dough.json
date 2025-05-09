@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:egg"
+    },
+    "Y": {
+      "item": "wildfood_generic:flour"
+    }
+  },
+  "pattern": [
+    "XY "
+  ],
+  "result": {
+    "count": 2,
+    "id": "wildfood_generic:dough"
+  }
+}
